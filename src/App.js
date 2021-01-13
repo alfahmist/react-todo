@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+import Paper from './components/Paper';
 
 function App() {
   return (
-    <div class="container">
-    <div class="frame">
+    <Paper>
       <section class="header">
         <button class="header-btn main-black-color">Add</button>
         <h1 class="header-title">Todo List</h1>
@@ -32,9 +33,7 @@ function App() {
           <span class="todo-text">Learning React</span>
         </div>
       </section>
-      
-    </div>
-  </div>
+    </Paper>
   );
 }
 

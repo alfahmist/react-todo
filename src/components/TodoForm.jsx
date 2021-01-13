@@ -2,10 +2,10 @@ import React from 'react';
 
 const TodoForm = () => {
   return (
-    <section class="add">
-      <form class="add-form">
-        <input type="text" class="add-input "/>
-        <button class="add-btn main-black-color">Add</button>
+    <section className="add">
+      <form className="add-form">
+        <input type="text" className="add-input "/>
+        <button className="add-btn main-black-color">Add</button>
       </form>
     </section>
   )

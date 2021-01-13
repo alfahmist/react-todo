@@ -3,10 +3,10 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <section class="header">
-      <button class="header-btn main-black-color">Add</button>
-      <h1 class="header-title">Todo List</h1>
-      <button class="header-btn main-red-color">Clear</button>
+    <section className="header">
+      <button className="header-btn main-black-color">Add</button>
+      <h1 className="header-title">Todo List</h1>
+      <button className="header-btn main-red-color">Clear</button>
     </section>
   )
 }

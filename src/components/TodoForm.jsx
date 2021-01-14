@@ -29,7 +29,7 @@ const TodoForm = ({addTodo}) => {
   )
 }
 
-TodoFrom.propTypes = {
+TodoForm.propTypes = {
   addTodo: PropTypes.func.isRequired
 }
 

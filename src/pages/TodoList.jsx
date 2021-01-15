@@ -28,12 +28,12 @@ const TodoList = () => {
   
   }
 
-  const showaddToggle = () => setShowAdd(!showAdd);
-
+  const showAddToggle = () => setShowAdd(!showAdd);
+  console.log(showAdd)
 
   return (
     <Paper>
-      <Header showaddToggle={showaddToggle}/>
+      <Header showAddToggle={showAddToggle} showAdd={showAdd}/>
       <TodoForm addTodo={addTodo} showAdd={showAdd}/>
       <Todos todos = {todos}/>
     </Paper>

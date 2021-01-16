@@ -15,6 +15,14 @@
   color: var(--main-black-color);
 }
 
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
 html {
   font-family: 10px;
 }
@@ -62,7 +70,8 @@ html {
 }
 
 .header-title {
-  flex: 1;
+  /* flex: 1; */
+  width : 52%;
   text-align: center;
   color: var(--main-black-color);
 
@@ -72,6 +81,7 @@ html {
 }
 
 .header-btn {
+  width: 24%;
   font-size: 1.8rem;
   font-family: "bungee", sans-serif;
 

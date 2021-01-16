@@ -27,8 +27,13 @@ const TodoList = () => {
   const addTodo = value => {
     const addedTodo = [...todos, {text: value, isCompleted: false}];
     
-    setTodos(addedTodo);
-  
+    if(todos.length<=9) {
+      setTodos(addedTodo);
+
+    } else {
+      alert("reach maximum todo")
+    }
+    
   }
 
   const completeTodo = (index) => {
@@ -38,12 +43,14 @@ const TodoList = () => {
       setTodos(addedTodo);
   }
 
+  const clearTodos = () => setTodos([]);
+
   const showAddToggle = () => setShowAdd(!showAdd);
-  console.log("todos", todos);
+  console.log("todos", todos.length);
 
   return (
     <Paper>
-      <Header showAddToggle={showAddToggle} showAdd={showAdd}/>
+      <Header showAddToggle={showAddToggle} showAdd={showAdd} clearTodos={clearTodos}/>
       <TodoForm addTodo={addTodo} showAdd={showAdd}/>
       <Todos todos = {todos} completeTodo={completeTodo}/>
     </Paper>

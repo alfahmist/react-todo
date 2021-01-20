@@ -17,7 +17,7 @@ const Todos = ({todos, completeTodo}) => {
           index={index}/>
      })}
      {todos.length === 0 && (
-       <div className={styles.TodoPlaceholderText}>
+       <div className={styles.todoPlaceholderText}>
          Add Todo by clicking {"  "}<span className={styles.addButtonPlaceholderText}> Add </span> Button
        </div>
      )}

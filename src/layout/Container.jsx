@@ -5,7 +5,7 @@ import { jsx, css } from '@emotion/react'
  
 import PropTypes from 'prop-types'
 
-const Container = ({children, flexDirection, flexWrap, justifyContent, alignItems, alignContent}) => {
+const Container = ({children, flexDirection, flexWrap, justifyContent, alignItems, alignContent, height, minHeight}) => {
 
   const containerstyles = css `
     display : flex;
@@ -14,6 +14,8 @@ const Container = ({children, flexDirection, flexWrap, justifyContent, alignItem
     justify-content : ${justifyContent};
     align-items : ${alignItems};
     align-content : ${alignContent};
+    height : ${height};
+    min-height : ${minHeight}
 
   `
   return (
@@ -26,7 +28,9 @@ Container.defaultProps = {
   flexWrap : 'nowrap',
   justifyContent : 'flex-start',
   alignItems : 'stretch',
-  alignContent : 'stretch'
+  alignContent : 'stretch',
+  height  : 'auto',
+  minHeight : 'unset'
 }
 
 Container.propTypes =  {
@@ -70,7 +74,9 @@ Container.propTypes =  {
     'flex-end',
     'center',
     'baseline',
-  ])
+  ]),
+  height : PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  minHeigt : PropTypes.string
 }
 
 export default Container;

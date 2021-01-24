@@ -2,7 +2,7 @@ import {css} from '@emotion/react'
 
 export const add = () => {
   return css `
-  padding: 16px;
+  // padding: 16px;
   `
 }
 
@@ -25,8 +25,8 @@ outline: unset;
 
 export const addForm = () => {
   return css`
-  display: flex;
-  align-items: flex-start;
+  // display: flex;
+  // align-items: flex-start;
   `
 }
 
@@ -35,8 +35,11 @@ export const addInput = ({theme}) =>{
   background: unset;
   border: unset;
   padding: 0 64px;
-  padding-bottom: 16px;
-  flex: 1;
+  // padding-bottom: 16px;
+  margin-left: 20px;
+  margin-top: 20px;
+  width : 90%;
+  // flex: 1;
 
   border-bottom: 1px solid ${theme.color.primary.red};
   outline: unset;

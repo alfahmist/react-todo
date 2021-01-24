@@ -15,12 +15,12 @@ export const button =  ({color, align}) => {
   }
 
   return css`
-  width: 24%;
+  /* width: 24%; */
   font-size: 1.8rem;
   font-family: "bungee", sans-serif;
   color: ${textColor};
 
-  padding: 16px;
+  // padding: 16px;
   cursor: pointer;
   
   background: unset;

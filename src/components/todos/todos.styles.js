@@ -2,9 +2,9 @@ import {css} from "@emotion/react"
 
 export const todos = ()=> {
   return css `
-  display: flex;
-  flex-direction: column;
-  min-height: 500px;
+  // display: flex;
+  // flex-direction: column;
+  // min-height: 500px;
   `
 }
 

@@ -5,10 +5,10 @@
 .addBtn.mainBlackColor:active {
   text-shadow: 1px 1px 2px var(--main-black-color)  ;
 }
-.addForm {
+/* .addForm {
   display: flex;
   align-items: flex-start;
-}
+} */
 
 .addInput {
   background: unset;

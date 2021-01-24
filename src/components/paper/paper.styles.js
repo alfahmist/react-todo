@@ -15,10 +15,10 @@ export const paper = ({theme}) => {
 export const frame = ({theme}) => {
   return css `
   border: 1px solid ${theme.color.primary.black};
-  height: 100%;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
+  // height: 100%;
+  // justify-content: space-between;
+  // display: flex;
+  // flex-direction: column;
   
   `
 }

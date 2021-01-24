@@ -4,6 +4,11 @@ import { jsx, useTheme } from '@emotion/react'
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Container from '../../layout/Container';
+import Item from '../../layout/Item';
+
+import Button from '../button/Button';
+
 // import styles from './todoform.module.css'
 
 import * as styles from './todoform.styles';
@@ -30,13 +35,19 @@ const TodoForm = ({addTodo, showAdd}) => {
   }
   if(showAdd){
     return (
-      <section css={styles.add}>
+      <section className="todoform-component">
         <form css={styles.addForm} onSubmit={handleFormSubmit}>
-          <input type="text" 
-          css={styles.addInput({theme})} 
-          value={value} 
-          onChange={e => setValue(e.target.value)}/>
-          <button css={styles.addBtn({theme})}>Add</button>
+          <Container alignItems='flex-start'>
+            <Item flex='1'>
+              <input type="text" 
+              css={styles.addInput({theme})} 
+              value={value} 
+              onChange={e => setValue(e.target.value)}/>
+            </Item>
+            <Item margin='0 20px 0 0'>
+              <Button text='ADD'/>
+            </Item>
+          </Container>
         </form>
       </section>
     );

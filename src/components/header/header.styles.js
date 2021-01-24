@@ -8,7 +8,7 @@ export const header = () => {
 
 export const headerTitle = () =>{
   return css `
-  width : 52%;
+  /*width : 52%;*/
   text-align: center;
   color: var(--main-black-color);
 

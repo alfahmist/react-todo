@@ -3,7 +3,7 @@
 /** @jsxImportSource @emotion/react */
 import { jsx } from '@emotion/react'
 
-import Todo from '../todo/Todo';
+import Todo from '../todo/TodoClass';
 import PropTypes from 'prop-types';
 
 // import styles from './todos.module.css'

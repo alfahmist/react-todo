@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import '../App.css';
 
-import Header from '../components/header/Header';
-import Paper from '../components/paper/Paper';
-import TodoForm from '../components/todoform/TodoForm';
-import Todos from '../components/todos/Todos'
+import Header from '../components/header/HeaderClass';
+import Paper from '../components/paper/PaperClass';
+import TodoForm from '../components/todoform/TodoFormClass';
+import Todos from '../components/todos/TodosClass'
 
 import Container from '../layout/Container';
 

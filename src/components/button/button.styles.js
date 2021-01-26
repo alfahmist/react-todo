@@ -26,6 +26,6 @@ export const button =  ({color, align}) => {
   background: unset;
   border: unset;
   outline: unset;
-  text-align: ${align}
-  `;
+  text-align: ${align};
+  `
 }

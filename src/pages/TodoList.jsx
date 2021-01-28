@@ -58,8 +58,13 @@ const TodoList = () => {
       setTodos(addedTodo);
   }
 
-  const clearTodos = () => !showAdd && setTodos([]);
-
+  const clearTodos = () => {
+    if(showAdd){
+      alert("Finish add todo before clear");
+      return;
+    }
+    !showAdd && setTodos([]);
+  }
   const showAddToggle = () => setShowAdd(!showAdd);
   console.log("todos", todos.length);
 
